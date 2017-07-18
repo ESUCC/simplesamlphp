@@ -1,0 +1,7 @@
+config/authsources.php
+config/config.php
+metadata/saml20-idp-hosted.php
+metadata/saml20-idp-remote.php
+metadata/saml20-sp-remote.php
+cert/
+
