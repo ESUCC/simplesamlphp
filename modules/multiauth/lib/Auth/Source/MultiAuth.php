@@ -74,7 +74,8 @@ class sspmod_multiauth_Auth_Source_MultiAuth extends SimpleSAML_Auth_Source {
 			} else {
 				// Use the authtype as the css class
 				$authconfig = $authsources->getArray($source, NULL);
-				if (!array_key_exists(0, $authconfig) || !is_string($authconfig[0])) {
+				// SI 08/08/2017 changed array_key_exists to isset() to avoid exception if $authconfig is null
+				if (!isset($authconfig[0]) || !is_string($authconfig[0])) {
 					$css_class = "";
 				} else {
 					$css_class = str_replace(":", "-", $authconfig[0]);
