@@ -56,44 +56,31 @@ if(array_key_exists('header', $this->data)) {
 }
 ?></title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-	<!--<link rel="stylesheet" type="text/css" href="/<?php echo $this->data['baseurlpath']; ?>resources/default.css" />-->
-    <link rel="stylesheet" type="text/css" href="/<?php echo $this->data['baseurlpath']; ?>resources/nebraskaCloud/css/nebraskaCloud.css" />
+	<link rel="stylesheet" type="text/css" href="/<?php echo $this->data['baseurlpath']; ?>resources/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/<?php echo $this->data['baseurlpath']; ?>resources/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="/<?php echo $this->data['baseurlpath']; ?>resources/nebraskaCloud/css/nebraskaCloud.css" />
 	<link rel="icon" type="image/icon" href="/<?php echo $this->data['baseurlpath']; ?>resources/icons/favicon.ico" />
 
 <?php
 
 if(!empty($jquery)) {
-	$version = '1.5';
+	$version = '1.8';
 	if (array_key_exists('version', $jquery))
 		$version = $jquery['version'];
-
-	if ($version == '1.5') {
+		
+	if ($version == '1.8') {
 		if (isset($jquery['core']) && $jquery['core'])
-			echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery.js"></script>' . "\n");
-
+			echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-1.8.js"></script>' . "\n");
+				
 		if (isset($jquery['ui']) && $jquery['ui'])
-			echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-ui.js"></script>' . "\n");
-
+			echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-ui-1.8.js"></script>' . "\n");
+					
 		if (isset($jquery['css']) && $jquery['css'])
 			echo('<link rel="stylesheet" media="screen" type="text/css" href="/' . $this->data['baseurlpath'] .
-				'resources/uitheme/jquery-ui-themeroller.css" />' . "\n");
-
-	} else if ($version == '1.6') {
-		if (isset($jquery['core']) && $jquery['core'])
-			echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-16.js"></script>' . "\n");
-
-		if (isset($jquery['ui']) && $jquery['ui'])
-			echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-ui-16.js"></script>' . "\n");
-
-		if (isset($jquery['css']) && $jquery['css'])
-			echo('<link rel="stylesheet" media="screen" type="text/css" href="/' . $this->data['baseurlpath'] .
-				'resources/uitheme16/ui.all.css" />' . "\n");
+								'resources/uitheme1.8/jquery-ui.css" />' . "\n");
 	}
 }
+
 
 if(!empty($this->data['htmlinject']['htmlContentHead'])) {
 	foreach($this->data['htmlinject']['htmlContentHead'] AS $c) {
@@ -113,9 +100,9 @@ if ($this->isLanguageRTL()) {
 
 
 	<meta name="robots" content="noindex, nofollow" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
-
+	<script src="/<?php echo $this->data['baseurlpath']; ?>resources/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/<?php echo $this->data['baseurlpath']; ?>resources/typeahead/typeahead.bundle.min.js"></script>
+	
 
 <?php
 if(array_key_exists('head', $this->data)) {
