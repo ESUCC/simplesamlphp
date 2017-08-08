@@ -1,0 +1,23 @@
+body {
+  color: $primary-color;
+  background: $body-background-color;
+  padding: 0;
+  margin: 0;
+}
+
+#wrap {
+  background: $wrap-background-color;
+  border: none;
+  margin: 0;
+  max-width: none;
+}
+
+#content {
+  background: $content-background-color;
+  padding-bottom: 20px;
+}
+
+
+.loginHelpAlert {
+  margin-top: 2em;
+}

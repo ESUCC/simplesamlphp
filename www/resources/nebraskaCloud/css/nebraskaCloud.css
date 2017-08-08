@@ -1,0 +1,119 @@
+/*
+ * Typeahead Styles
+ */
+header {
+  background-color: white;
+  margin-top: 30px;
+  padding: 25px;
+  padding-left: 150px;
+  text-align: left;
+  min-height: 100px;
+  background-image: url("../images/nebraskacloud-logo.png");
+  background-repeat: no-repeat;
+  background-position: 5px 5px; }
+  header h1 {
+    color: black; }
+    header h1 a, header h1 a:visited, header h1 a:hover {
+      color: inherit; }
+
+body {
+  color: #333;
+  background: #0a0b54;
+  padding: 0;
+  margin: 0; }
+
+#wrap {
+  background: #fff;
+  border: none;
+  margin: 0;
+  max-width: none; }
+
+#content {
+  background: #fff;
+  padding-bottom: 20px; }
+
+.loginHelpAlert {
+  margin-top: 2em; }
+
+#idpSelection ul {
+  list-style: none; }
+  #idpSelection ul li {
+    list-style: none; }
+
+footer {
+  background-color: #0d0c27;
+  color: #efefef;
+  padding: 20px;
+  margin-top: 50px; }
+  footer a {
+    color: #efefef; }
+
+.twitter-typeahead {
+  width: 100%; }
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  outline: none; }
+
+.typeahead {
+  background-color: #fff; }
+
+.typeahead:focus {
+  border: 2px solid #0097cf; }
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+.tt-hint {
+  color: #999; }
+
+.tt-menu {
+  min-width: 200px;
+  width: 100%;
+  margin: 3px 0;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+  max-height: 300px;
+  overflow-y: auto;
+ }
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px; }
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0097cf; }
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf; }
+
+.tt-suggestion p {
+  margin: 0; }
+
+.gist {
+  font-size: 14px; }
+
+/*# sourceMappingURL=nebraskaCloud.css.map */

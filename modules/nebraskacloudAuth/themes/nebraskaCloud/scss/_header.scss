@@ -1,0 +1,21 @@
+header {
+  background-color: white;
+  margin-top: 30px;
+  padding: 25px;
+  padding-left: 150px;
+  text-align: left;
+  min-height: 100px;
+  background-image: url("../images/nebraskacloud-logo.png");
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+
+  #logo {}
+
+  h1 {
+    color: $header-title-color;
+
+    a, a:visited, a:hover {
+      color: inherit;
+    }
+  }
+}
