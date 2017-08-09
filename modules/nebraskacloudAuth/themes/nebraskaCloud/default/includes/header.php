@@ -102,7 +102,6 @@ if ($this->isLanguageRTL()) {
 	<meta name="robots" content="noindex, nofollow" />
 	<script src="/<?php echo $this->data['baseurlpath']; ?>resources/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/<?php echo $this->data['baseurlpath']; ?>resources/typeahead/typeahead.bundle.min.js"></script>
-	
 
 <?php
 if(array_key_exists('head', $this->data)) {

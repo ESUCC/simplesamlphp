@@ -1,8 +1,8 @@
 {
 	"select_source_header": {
-		"en": "Select an authentication source"
+		"en": "Select your district or organization To Log In"
 	},
 	"select_source_text": {
-		"en": "The selected authentication source will be used to authenticate you and and to create a valid session."
+		"en": "Click and begin typing and/or scroll to select:"
 	}
 }
