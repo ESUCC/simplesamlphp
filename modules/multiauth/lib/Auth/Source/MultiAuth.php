@@ -82,10 +82,21 @@ class sspmod_multiauth_Auth_Source_MultiAuth extends SimpleSAML_Auth_Source {
 				}
 			}
 
+			// Add alias to allow multiple listings/names that direct to the same auth source
+			if (array_key_exists('alias', $info))
+			{
+				$alias = $info['alias'];
+			}
+			else
+			{
+				$alias = NULL;
+			}
+			
 			$this->sources[] = array(
 				'source' => $source,
 				'text' => $text,
 				'css_class' => $css_class,
+				'alias' => $alias,
 			);
 		}
 	}

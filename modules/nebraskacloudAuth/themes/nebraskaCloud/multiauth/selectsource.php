@@ -48,9 +48,17 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php
 
     foreach($this->data['sources'] as $source) {
-      $name = htmlspecialchars('src-' . base64_encode($source['source']));
-      $id = htmlspecialchars($source['source']);
-      $value = htmlspecialchars($this->t($source['text']));
+    	if ((!isset($source['alias']) || trim($source['alias'])===''))
+    	{
+    		$name = htmlspecialchars('src-' . base64_encode($source['source']));
+    	}
+    	else
+    	{
+    		// an alias was defined in the authsources configuration
+    		$name = htmlspecialchars('src-' . base64_encode($source['alias']));
+    	}
+    	$id = htmlspecialchars($source['source']);
+      	$value = htmlspecialchars($this->t($source['text']));
 
 echo <<<EOT
       {
